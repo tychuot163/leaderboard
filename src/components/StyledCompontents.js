@@ -1,14 +1,26 @@
 import styled from 'styled-components';
 import { RANKING_COLOR } from '../constants';
 
-export const ListContainer = styled.div`
-  background-color: #f7f5f6;
+
+export const RankingContainer = styled.div`
   position: absolute;
-  width: 90%;
-  height: 500px;
+  width: 100%;
+  height: 700px;
   border-radius: 10px;
   left: 50%;
   top: 30px;
+  transform: translateX(-50%);
+  background-image: url(https://i.imgur.com/bIABy42.png);
+`;
+
+export const ListContainer = styled.div`
+  background-color: #f7f5f6;
+  position: absolute;
+  width: 35%;
+  height: 500px;
+  border-radius: 10px;
+  left: 50%;
+  top: 115px;
   transform: translateX(-50%);
 `;
 
@@ -36,11 +48,13 @@ export const ItemRanking = styled.div`
   color: #fff;
   font-size: 14px;
   background-color: ${(props) => RANKING_COLOR[props.ranking - 1] || '#8eb9f5'};
+  font-family    : 'Montserrat', sans-serif !important;
 `;
 
 export const ItemName = styled.div`
   color: #363336;
   margin-left: 8px;
+  font-family    : 'Montserrat', sans-serif !important;
 `;
 
 export const ItemPicture = styled.div`
@@ -60,4 +74,6 @@ export const ItemScore = styled.div`
   flex-grow: 1;
   text-align: right;
   color: #e46a86;
+  font-family    : 'Montserrat', sans-serif !important;
+
 `;

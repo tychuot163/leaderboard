@@ -7,3 +7,4 @@ export const RANDOM_MIN = 500;
 export const NUMERATOR = 1;
 export const DENOMINATOR = 3;
 export const RANKING_COLOR = ['#f54545', '#ff8547', '#ffac38'];
+export const RANKING_LEVEL = ['Trạng nguyên', 'Học sĩ', 'Học bá'];
